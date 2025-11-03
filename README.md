@@ -1,16 +1,101 @@
-# React + Vite
+💹 FinancialWeb — Trading UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern trading dashboard built with React, Vite, Tailwind CSS, and Firebase Authentication.
+It provides a sleek, responsive interface including watchlists, stock charts, order management, portfolio view, funds tracking, and user profile management.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Firebase Authentication (Google Sign‑In)
+Secure sign‑in and sign‑out flow using Firebase Auth with Google provider.
 
-## React Compiler
+Real‑Time Stock Watchlist
+Displays mock and live NSE/BSE stock data using an external API, refreshed every 30 seconds.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Interactive Charts
+Beautiful stock charts rendered via Recharts and ApexCharts.
 
-## Expanding the ESLint configuration
+Orders & Portfolio Modules
+Simulated order interface, portfolio overview, and positions placeholder pages.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Fund Dashboard
+Equity & commodity overview with margin details and transaction summaries.
+
+Responsive Layout
+❖ Mobile‑first
+❖ Adaptive sidebar and floating menu button for small screens.
+
+Persistent Auth Guard
+Private routes via React Router; redirects unauthorized users to the sign‑in page.
+
+Toast Alerts
+Clean success/error notification system using react‑hot‑toast.
+
+🧩 Tech Stack
+
+Category    	Technology
+Framework        	 React 19 + Vite 7
+Styling     	     TailwindCSS 4
+Charts      	     Recharts and ApexCharts
+Authentication	   Firebase Auth
+Routing          	 React Router 7
+Icons	             Lucide React + React Icons
+Alerts             react‑hot‑toast
+Linting	           ESLint v9 (recommended rules + React Hooks config)
+
+🏗️ Project Structure
+
+sagarkailiya-tradingui/
+│
+├── src/
+│   ├── components/       → Reusable UI components
+│   ├── layout/           → NavBar, Footer, and Main Layout
+│   ├── pages/            → App pages (Home, Sign‑in, Protected views)
+│   ├── firebase.js       → Firebase initialization
+│   ├── App.jsx           → Routing and authentication logic
+│   └── main.jsx          → Application entry point
+│
+├── public/
+├── package.json
+├── vite.config.js
+├── firebase.json
+├── .firebaserc
+└── README.md
+
+⚙️ Setup & Installation
+
+1.Clone repository
+
+git clone https://github.com/yourusername/financialweb.git
+cd financialweb
+
+2.Install dependencies
+
+npm install
+
+3.Run local development server
+npm run dev
+
+📸 Screens Overview
+
+Sign‑in Page — Google authentication.
+Dashboard — Shows funds and margin details.
+Watchlist + Chart — Real‑time market snapshot and graph.
+Orders, Holdings, Portfolio, Bids — Interactive placeholders.
+User Page — Profile, logout, and quick menu.
+Each section is highly readable, Tailwind‑styled, and oriented for future integration with live brokerage APIs.
+
+
+🧠 Developer Notes
+
+Default auth guarding implemented via <PrivateRoute /> (see src/pages/privateroute).
+Uses localStorage token fallback for reliability.
+Mock data ensures UI renders even if API requests fail.
+
+
+❤️ Acknowledgements
+Created by Sagar Kailiya
+Icons by Lucide
+Charts by Recharts and ApexCharts
+Hosted via Firebase
+
+
