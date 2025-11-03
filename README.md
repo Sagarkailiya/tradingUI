@@ -50,22 +50,61 @@ Clean success/error notification system using **react-hot-toast**.
 ---
 
 ## 🏗️ Project Structure
-sagarkailiya-tradingui/
-│
-├── src/
-│ ├── components/ → Reusable UI components
-│ ├── layout/ → NavBar, Footer, and Main Layout
-│ ├── pages/ → App pages (Home, Sign-in, Protected views)
-│ ├── firebase.js → Firebase initialization
-│ ├── App.jsx → Routing and authentication logic
-│ └── main.jsx → Application entry point
-│
-├── public/
-├── package.json
-├── vite.config.js
-├── firebase.json
-├── .firebaserc
-└── README.md
+Directory structure:
+└── sagarkailiya-tradingui/
+    ├── README.md
+    ├── eslint.config.js
+    ├── firebase.json
+    ├── index.html
+    ├── package.json
+    ├── vite.config.js
+    ├── .firebaserc
+    ├── src/
+    │   ├── App.css
+    │   ├── App.jsx
+    │   ├── firebase.js
+    │   ├── index.css
+    │   ├── main.jsx
+    │   ├── components/
+    │   │   ├── funds.jsx
+    │   │   ├── bids/
+    │   │   │   └── bids.jsx
+    │   │   ├── funddashboard/
+    │   │   │   └── funddashboard.jsx
+    │   │   ├── holdings/
+    │   │   │   └── holding.jsx
+    │   │   ├── order/
+    │   │   │   └── order.jsx
+    │   │   ├── portfolio/
+    │   │   │   └── portfolio.jsx
+    │   │   ├── stockChart/
+    │   │   │   └── stockchart.jsx
+    │   │   ├── stockWatchlist/
+    │   │   │   └── StockWatchlistSidebar.jsx
+    │   │   ├── userdetail/
+    │   │   │   └── userdetail.jsx
+    │   │   └── watchlist/
+    │   │       └── watchlist.jsx
+    │   ├── layout/
+    │   │   ├── footer.jsx
+    │   │   ├── mainlayout.jsx
+    │   │   └── navBar.jsx
+    │   └── pages/
+    │       ├── home.jsx
+    │       ├── privateroute/
+    │       │   └── privateroute.jsx
+    │       ├── signin/
+    │       │   └── signin.jsx
+    │       └── signOut/
+    │           └── signout.jsx
+    └── .firebase/
+        ├── hosting.LmZpcmViYXNlXHRyYWRpbmd1aS1iMmI0OFxob3N0aW5n.cache
+        └── tradingui-b2b48/
+            └── hosting/
+                ├── index.html
+                └── assets/
+                    └── index-CLpl2Xgf.css
+
 
 
 ---
