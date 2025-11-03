@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import NavBar from './NavBar';
-import StockWatchlistSidebar from '../components/StockWatchlistSidebar';
+import StockWatchlistSidebar from '../components/stockWatchlist/StockWatchlistSidebar';
 import StockChart from '../components/stockChart/stockchart';
+import Footer from './footer';
 
 const MainLayout = () => {
   const [selectedStock, setSelectedStock] = useState(null);
@@ -72,6 +73,7 @@ const MainLayout = () => {
           )}
         </div>
       </div>
+      {/* <Footer/> */}
     </div>
   );
 };

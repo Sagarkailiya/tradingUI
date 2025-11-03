@@ -13,7 +13,7 @@ import {
   Gavel,
   ChevronDown
 } from 'lucide-react';
-import { handleLogout } from '../pages/signOut/signout';
+import {handleLogout} from '../../pages/signOut/signout'
 import { useNavigate } from 'react-router-dom';
 
 

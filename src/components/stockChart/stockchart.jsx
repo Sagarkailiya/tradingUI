@@ -45,7 +45,7 @@ const StockChart = ({ stock, onClose }) => {
   return (
     <div className="h-full p-6 bg-gray-50">
       <div className="h-full bg-white rounded-lg shadow-lg p-6 flex flex-col">
-        {/* Header */}
+        
         <div className="flex items-start justify-between mb-6">
           <div className="flex-1">
             <h2 className="text-2xl font-semibold text-gray-900">
@@ -75,7 +75,6 @@ const StockChart = ({ stock, onClose }) => {
           </button>
         </div>
 
-        {/* Chart */}
         <div className="flex-1">
           {chartLoading ? (
             <div className="flex items-center justify-center h-full">
@@ -117,7 +116,7 @@ const StockChart = ({ stock, onClose }) => {
                 </LineChart>
               </ResponsiveContainer>
 
-              {/* Stats Grid */}
+              
               <div className="grid grid-cols-4 gap-4 mt-6 p-4 bg-gray-50 rounded-lg">
                 <div>
                   <p className="text-xs text-gray-500">Open</p>

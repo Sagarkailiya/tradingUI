@@ -56,7 +56,7 @@ export default function IPODashboard() {
 
   return (
     <div className="min-h-screen bg-white px-4 py-6 sm:px-8">
-      {/* Tabs */}
+     
       <div className="flex flex-wrap gap-4 border-b pb-2 mb-4 text-sm font-medium">
         {tabs.map((tab) => (
           <button
@@ -71,12 +71,12 @@ export default function IPODashboard() {
         ))}
       </div>
 
-      {/* Notification */}
+      
       <div className="bg-yellow-100 text-gray-700 text-sm p-3 rounded mb-4">
         Funds added between 12:00AM and 7:30 AM will be visible after 7:30AM.
       </div>
 
-      {/* Search */}
+      
       <div className="relative mb-6">
         <input
           type="text"
@@ -86,7 +86,7 @@ export default function IPODashboard() {
         <Search className="absolute right-3 top-2.5 w-4 h-4 text-gray-400" />
       </div>
 
-      {/* IPO List */}
+      
       <div className="space-y-6">
         {ipoData.map((ipo, index) => (
           <div key={index} className="border rounded-lg p-4 shadow-sm">

@@ -6,14 +6,15 @@ import './App.css';
 import Mainlayout from './layout/mainlayout';
 import Home from './pages/home';
 import { Toaster } from 'react-hot-toast';
-import Userdetail from './components/userdetail';
+import Userdetail from './components/userdetail/userdetail.jsx';
 import GoogleSignIn from './pages/signin/signin';
 import PrivateRoute from './pages/privateroute/privateroute';
-import Orders from './components/order';
-import FundsDashboard from './components/funddashboard';
-import Portfolio from './components/portfolio';
-import IPODashboard from './components/bids';
+import Orders from './components/order/order.jsx';
+import FundsDashboard from './components/funddashboard/funddashboard.jsx';
+import Portfolio from './components/portfolio/portfolio.jsx';
+import IPODashboard from './components/bids/bids.jsx';
 import FundsOverview from './components/funds';
+import Holding from './components/holdings/holding.jsx'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -66,6 +67,7 @@ function App() {
             <Route path='portfolio' element={<Portfolio />} />
             <Route path='bids' element={<IPODashboard />} />
             <Route path='funds' element={<FundsOverview />} />
+            <Route path='holdings' element={<Holding />} />
           </Route>
         </Route>
       </Routes>

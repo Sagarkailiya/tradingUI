@@ -6,13 +6,14 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDkW7u7nR62nXM_pnWhyRRcFCeMFKU7HZw",
-  authDomain: "wingsai-13c87.firebaseapp.com",
-  projectId: "wingsai-13c87",
-  storageBucket: "wingsai-13c87.firebasestorage.app",
-  messagingSenderId: "419024350165",
-  appId: "1:419024350165:web:5b7e89e78615ed58cfeb5c"
+  apiKey: "AIzaSyCXmwGKSZio_eK1yL85EtOHdn_Mlq6C5Wo",
+  authDomain: "tradingui-b2b48.firebaseapp.com",
+  projectId: "tradingui-b2b48",
+  storageBucket: "tradingui-b2b48.firebasestorage.app",
+  messagingSenderId: "576218122443",
+  appId: "1:576218122443:web:66510b7f83721a410af34e"
 };
 
 // Initialize Firebase

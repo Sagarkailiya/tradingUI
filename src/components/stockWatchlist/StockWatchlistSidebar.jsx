@@ -16,7 +16,7 @@ const StockWatchlistSidebar = ({ onStockSelect, selectedStock }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const tabs = ['Watchlist 1', 'Watchlist 2', 'Watchlist 3', 'Watchlist 4'];
+  const tabs = ['Watchlist 1', 'Watchlist 2', ];
 
   const getMockStocks = () => [
     {
