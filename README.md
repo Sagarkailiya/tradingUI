@@ -49,7 +49,7 @@ Clean success/error notification system using **react-hot-toast**.
 
 ---
 
-## 🏗️ Project Structure
+
 Directory structure:
 └── sagarkailiya-tradingui/
     ├── README.md
